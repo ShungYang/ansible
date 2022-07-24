@@ -55,6 +55,11 @@ sudo apt-get install ansible
 ssh-keygen
 ```
 
+
+把 id_rsa 改成 ansible
+
+
+
 ## Pass public key to managed hosts
 
 為了要讓控制節點(Control node)能透過 ssh 連線上託管節點, 需要將產生的 ssh-key 放置到託管節點(Managed nodes)
@@ -66,7 +71,7 @@ ssh-keygen
 ssh-copy-id -i ansible {託管節點-host-name}
 ```
 
-# sudo user
+# sudo usercat simplifi
 
 由於在執行 Ansible 模組時幾乎都會使用 sudo 權限所以需要在託管節點開放當前使用者sudo 時不用輸入密碼, 以 osadmin 為例
 
