@@ -55,10 +55,7 @@ sudo apt-get install ansible
 ssh-keygen
 ```
 
-
 把 id_rsa 改成 ansible
-
-
 
 ## Pass public key to managed hosts
 
